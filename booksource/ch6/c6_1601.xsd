@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- PML 스키마 -->
+
+<xsd:schema 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.mincheol.com/pml"
+	elementFormDefault="qualified"
+	attributeFormDefault="unqualified"
+	xmlns="http://www.mincheol.com/pml">
+
+	<xsd:element name="publisher" type="ctPublisher"/>
+
+	<xsd:complexType name="ctPublisher">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="tel" type="xsd:string"/>
+			<xsd:element name="address" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>

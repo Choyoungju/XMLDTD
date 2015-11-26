@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<booklist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		    xsi:noNamespaceSchemaLocation="c6_1402.xsd">
+
+	<book>
+		<title>Visual Basic</title>
+		<author name="신민철" tel="011-387-4876"/>
+		<publisher name="프리렉" tel="02-568-3875">
+			<address>서울시 마포구 연남동</address>
+		</publisher>
+	</book>
+
+</booklist>

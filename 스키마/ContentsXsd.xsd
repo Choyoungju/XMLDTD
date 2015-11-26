@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+   
+    <!-- 11/18일 까지 한 음악과 영화에 대한 정보를 스키마로 구현하여 xml과 연결-->
+    <!-- 스키마를 만들면서 글로벌 엘리먼트에 대한 참조와 complex,simple Type에 대한 활용, restriction pattern을 사용-->
+    
+    <!-- 글로벌 엘리먼트를 선언하고 이를 music 과 movie 에서 활용-->
+    
+    <xsd:element name="title" type="xsd:string"></xsd:element>
+    <xsd:element name="year" type="xsd:integer"></xsd:element>
+    <xsd:element name="rate" type="xsd:double"></xsd:element>
+    
+    
+    <!--루트 엘리먼트 선언-->
+    <xsd:element name = "Contents">
+        <xsd:complexType>
+            <xsd:sequence>
+                
+                <!--루트 엘리먼트의 자식 엘리먼트 선언--> 
+                <!-- music 엘리먼트 생성 , title year rate는 글로벌을 참조-->
+                <xsd:element name="music" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element ref = "title"></xsd:element>
+                            <xsd:element name="artist" type="xsd:string"></xsd:element>
+                            <xsd:element name="music_publisher" type="xsd:string"></xsd:element>
+                            <xsd:element ref = "year"></xsd:element>
+                            <xsd:element ref ="rate"></xsd:element>
+                            <xsd:element name="lyrics" type="xsd:string"></xsd:element>
+                            <xsd:element name="compose" type="xsd:string"></xsd:element>
+                        </xsd:sequence>
+                        
+                        <!-- 음악 엘리먼트가 가질 속성-->
+                        <xsd:attribute name="kind" use = "required">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:pattern value="rock|hiphop|ballad"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:attribute>
+                    </xsd:complexType>
+                </xsd:element>
+                
+                <xsd:element name="movie" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element ref="title"></xsd:element>
+                            <xsd:element name="director" type="xsd:string"></xsd:element>
+                            <xsd:element ref="year" ></xsd:element>
+                            <xsd:element ref="rate" ></xsd:element>
+                            <xsd:element name="time" type="xsd:integer"></xsd:element>
+                            <xsd:element name="age" type="xsd:integer"></xsd:element>
+                        </xsd:sequence>
+                        
+                        <!-- 영화 엘리먼트가 가질 속성-->
+                        <xsd:attribute name="genre" use = "required">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:pattern value="action|thriller|comedy"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:attribute>
+                        
+                        
+                        <xsd:attribute name="country" use = "required"></xsd:attribute>
+                        <xsd:attribute name="actor" use = "optional"></xsd:attribute>
+                        
+                        
+                    </xsd:complexType>
+                </xsd:element>           
+                
+                
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+</xsd:schema>

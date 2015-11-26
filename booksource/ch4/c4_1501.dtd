@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 엘리먼트 선언 -->
+<!ELEMENT booklist (book*)>
+	<!ELEMENT book (title, author+, publisher, price)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT author (name, tel, address)>
+			<!ELEMENT name (#PCDATA)>
+			<!ELEMENT tel (#PCDATA)>
+			<!ELEMENT address (#PCDATA)>
+		<!ELEMENT publisher (#PCDATA)>
+		<!ELEMENT price (#PCDATA)>
+
+<!-- 속성 선언 -->
+<!ATTLIST book 
+		id ID #IMPLIED
+		kind (컴퓨터|소설|언어) #REQUIRED>
+<!ATTLIST name sex (man|woman) #REQUIRED>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<booklist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		    xsi:noNamespaceSchemaLocation="c6_1503.xsd">
+
+	<kinds>
+		<kind id="k1">컴퓨터</kind>
+		<kind id="k2">소설</kind>
+		<kind id="k3">잡지</kind>
+	</kinds>
+
+	<book id="b1">XML 기초서</book>
+	<book id="b2">.NET And XML</book>
+	<book id="b3">Java And XML</book>
+
+</booklist>

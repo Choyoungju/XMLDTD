@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 내부 DTD 서브셋 정의 -->
+<!DOCTYPE 책목록 SYSTEM "c4_1401.dtd" [
+	<!-- 내부 파라미터 엔티티 값 변경 -->
+	<!ENTITY % en "IGNORE">
+	<!ENTITY % kr "INCLUDE">
+]>
+
+<!-- 루트 엘리먼트 -->
+<책목록>
+	<책>
+		<제목>시인과도둑</제목>
+		<저자>이문열</저자>
+	</책>
+</책목록>

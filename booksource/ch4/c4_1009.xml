@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 문서 유형 선언 -->
+<!DOCTYPE booklist SYSTEM "c4_1009.dtd">
+
+<!-- 루트 엘리먼트 -->
+<booklist>
+	<book>
+		<title>시인과도둑</title>
+		<author>
+			이문열
+			<tel>016-456-7890</tel>
+		</author>
+		<publisher>가람기획</publisher>
+	</book>
+	<book>
+		<title>모랫말아이들</title>
+		<author>
+			<name>황석영</name>
+			<tel>011-123-1234</tel>
+		</author>
+		<publisher>친구미디어</publisher>
+	</book>
+</booklist>

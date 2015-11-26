@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 내부 파라미터 엔티티 선언 -->
+<!ENTITY % en "INCLUDE">
+<!ENTITY % kr "IGNORE">
+
+<!-- 컨디셔널 섹션 정의 -->
+<![%en;[
+		<!-- 영문 엘리먼트 선언 -->
+		<!ELEMENT booklist (book*)>
+		<!ELEMENT book (title, author)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT author (#PCDATA)>
+]]>
+
+<![%kr;[
+		<!-- 한글 엘리먼트 선언 -->
+		<!ELEMENT 책목록 (책*)>
+		<!ELEMENT 책 (제목, 저자)>
+		<!ELEMENT 제목 (#PCDATA)>
+		<!ELEMENT 저자 (#PCDATA)>
+]]>
+
+
+

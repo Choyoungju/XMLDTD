@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<xsd:schema	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+	<!-- 루트 엘리먼트 선언 -->  
+  <xsd:element name="booklist">  
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="book" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="title" type="xsd:string"/>
+
+							<xsd:element name="price">
+								<xsd:complexType>
+									<xsd:simpleContent>
+										<xsd:extension base="xsd:int">
+											<xsd:attribute name="unit" type="stUnit"/>
+										</xsd:extension>
+									</xsd:simpleContent>
+								</xsd:complexType>
+							</xsd:element>
+
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<!-- 글로벌 심플 타입 정의 -->
+	<xsd:simpleType name="stUnit">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="원"/>
+			<xsd:enumeration value="달러"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

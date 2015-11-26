@@ -1,0 +1,8 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\booksource.Properties.Resources.resources
+obj\Debug\booksource.csproj.GenerateResource.Cache
+bin\Debug\booksource.exe
+bin\Debug\booksource.pdb
+obj\Debug\booksource.exe
+obj\Debug\booksource.pdb
+obj\Debug\booksource.ch13.ReadXmlForGridView.resources

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="c6_0302" targetNamespace="http://tempuri.org/c6_0302.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/c6_0302.xsd" xmlns:mstns="http://tempuri.org/c6_0302.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="booklist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="book">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="title" type="xs:string" />
+              <xs:element name="author" type="xs:string" />
+              <xs:element name="publisher" type="xs:string" />
+              <xs:element name="price" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

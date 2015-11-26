@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 프로세싱 지시자 -->
+<?xml-stylesheet type="text/xsl" href="c8_0301.xsl"?>
+
+<booklist>
+	<book id="b1" kind="computer"> 
+		<title>XML 중급</title>   
+		<author>이 규미</author>  
+		<publisher>Freelec</publisher> 
+		<price>25000</price>
+	</book>
+</booklist>
+

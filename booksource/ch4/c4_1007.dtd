@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 루트 엘리먼트 선언 -->
+<!ELEMENT booklist (book*)>
+  <!ELEMENT book (title, author+, publisher, image?)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+	  <!ELEMENT publisher (#PCDATA)>
+		<!ELEMENT image EMPTY>
+

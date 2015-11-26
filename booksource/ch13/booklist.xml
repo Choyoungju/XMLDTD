@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<booklist>
+  <book>
+    <bid>b1</bid>
+    <kind>컴퓨터</kind>
+    <title>XML 기초</title>
+    <publisher>프리렉</publisher>
+    <price>20000</price>
+  </book>
+  <book>
+    <bid>b2</bid>
+    <kind>자연과학</kind>
+    <title>아름다운 자연</title>
+    <publisher>자연출판사</publisher>
+    <price>15000</price>
+  </book>
+  <book>
+    <bid>b3</bid>
+    <kind>컴퓨터</kind>
+    <title>XML 웹서비스</title>
+    <publisher>프리렉</publisher>
+    <price>30000</price>
+  </book>
+  <book>
+    <bid>b4</bid>
+    <kind>소설</kind>
+    <title>성공의 열쇠</title>
+    <publisher>성공문화사</publisher>
+    <price>17000</price>
+  </book>
+  <book>
+    <bid>b5</bid>
+    <kind>자연과학</kind>
+    <title>우주의 신비</title>
+    <publisher>자연출판사</publisher>
+    <price>50000</price>
+  </book>
+</booklist>

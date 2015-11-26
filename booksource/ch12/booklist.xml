@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<booklist>
+    <book id="b1" kind="컴퓨터">
+        <title>JSP And Servlet</title>
+        <author>이규미</author>
+        <publisher>인포북</publisher>
+        <price>25000</price>
+    </book>
+    <book id="b2" kind="컴퓨터">
+        <title>기초에서 실무까지 XML</title>
+        <author>신민철</author>
+        <publisher>프리렉</publisher>
+        <price>35000</price>
+    </book>
+    <book id="b4" kind="컴퓨터">
+        <title>XML 전자상거래</title>
+        <author>이종호</author>
+        <publisher>정보문화사</publisher>
+        <price>28000</price>
+    </book>
+    <book id="b5" kind="소설">
+        <title>사랑과 전쟁</title>
+        <author>이사랑</author>
+        <publisher>전쟁문화사</publisher>
+        <price>15000</price>
+        <description>영화 <![CDATA[사랑&전쟁]]>으로 나오기도 했죠.</description>
+    </book>
+    <book id="b6" kind="수필">
+        <title>사랑을 느끼세요</title>
+        <author>이사랑</author>
+        <publisher>사랑출판사</publisher>
+        <price>15000</price>
+    </book>
+    <book id="b7" kind="잡지">
+        <title>월간 중앙</title>
+        <author>중앙일보기자</author>
+        <publisher>중앙일보사</publisher>
+        <price>18000</price>
+    </book>
+    <book id="b8" kind="잡지">
+        <title>주간 경제지</title>
+        <author>조선일보기자</author>
+        <publisher>조선일보사</publisher>
+        <price>27000</price>
+    </book>
+</booklist>

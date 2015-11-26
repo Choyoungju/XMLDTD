@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<booklist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		    xsi:noNamespaceSchemaLocation="c6_1101.xsd">
+
+	<book>
+		<title>XML Programming</title>
+		<price>25000</price>
+	</book>
+
+</booklist>

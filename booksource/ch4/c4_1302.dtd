@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 노테이션 선언 -->
+<!NOTATION gif PUBLIC "image/gif" "photoshop.exe">
+<!NOTATION jpeg	PUBLIC "image/jpeg" "photoshop.exe">
+<!NOTATION bmp PUBLIC "image/bmp" "mspaint.exe">
+
+<!--외부 일반 언파스드 엔티티 -->
+<!ENTITY front_image SYSTEM "book1.gif" NDATA gif>
+<!ENTITY back_image SYSTEM "book2.bmp" NDATA bmp>
+
+<!-- 엘리먼트 선언 -->
+<!ELEMENT booklist (book*)>
+	<!ELEMENT book (title, author)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT author (#PCDATA)>
+
+<!-- 속성 선언 -->
+<!ATTLIST book
+		image ENTITY #REQUIRED>
+
+

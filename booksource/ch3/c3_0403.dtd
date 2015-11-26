@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!ENTITY pub1 "프리렉">
+<!ENTITY writer "Writer: Donald Duck.">
+
+<!ELEMENT booklist (book)*>
+<!ELEMENT book (title, publisher)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)> 

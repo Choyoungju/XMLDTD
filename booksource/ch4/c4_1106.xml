@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<!DOCTYPE booklist SYSTEM "c4_1106.dtd">
+<booklist>
+	<book kind="소설" title="시인과도둑"/>
+	<book kind="컴퓨터" title="XML &amp; Java"/>
+</booklist>

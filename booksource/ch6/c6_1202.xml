@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<booklist  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		       xsi:noNamespaceSchemaLocation="c6_1202.xsd">
+
+	<book>
+		<title>XML Programming</title>
+		<author>신민철</author>
+	</book>
+
+	<book>
+		<title>DB Programming</title>
+		<writer>채규태</writer>
+	</book>
+
+	<book>
+		<title>JDBC Programming</title>
+		<author>신민철</author>
+		<author>채규태</author>
+	</book>
+
+</booklist>

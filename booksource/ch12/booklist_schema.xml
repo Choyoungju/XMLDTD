@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<bml:booklist 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mincheol.co.kr/schema/bml
+                        http://localhost:8080/ch12/bml.xsd"
+    xmlns:bml="http://www.mincheol.co.kr/schema/bml">
+
+	<bml:shop>
+		<bml:name>Mincheol 서점</bml:name>
+		<bml:address>ilsan white stone</bml:address>
+		<bml:tel>011-123-2335</bml:tel>
+	</bml:shop>
+	
+	<bml:kinds>
+		<bml:kind id="k1">computer</bml:kind>
+		<bml:kind id="k2">소설</bml:kind>
+		<bml:kind id="k3">잡지</bml:kind>
+	</bml:kinds>
+			 
+  <bml:book id="b1" kind="k1">
+    <bml:title>JSP And Servlet</bml:title>
+    <bml:author>Mincheol Shin</bml:author>
+    <bml:publisher>InfoBook</bml:publisher>
+    <bml:price>25000</bml:price>
+  </bml:book>
+
+  <bml:book id="b2" kind="k2">
+    <bml:title>사랑과 전쟁</bml:title>
+    <bml:author>이사랑</bml:author>
+    <bml:publisher>전쟁문화사</bml:publisher>
+    <bml:price unit="달러">15000</bml:price>
+  </bml:book>
+  
+</bml:booklist>

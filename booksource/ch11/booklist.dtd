@@ -1,0 +1,15 @@
+<?xml encoding="utf-8"?>
+
+<!-- 엘리먼트 선언 -->
+<!ELEMENT booklist (book*)>
+	<!ELEMENT book (title, author, publisher, price, description?)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT author (#PCDATA)>
+		<!ELEMENT publisher (#PCDATA)>
+		<!ELEMENT price (#PCDATA)>
+		<!ELEMENT description (#PCDATA)>
+
+<!-- 속성 선언 -->
+<!ATTLIST book
+		id		ID			#REQUIRED
+		kind	CDATA	#IMPLIED>

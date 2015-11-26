@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<booklist xmlns="http://www.minchoel.co.kr/2003/BookML"
+          xmlns:bml="http://www.minchoel.co.kr/2003/BookML">
+	<book bml:id="b1" bml:kind="소설">
+		<title>시인과도둑</title>
+		<author>이문열</author>
+	</book>
+
+	<book bml:id="b2" bml:kind="소설">
+		<title>봉순이 언니</title>
+		<author>공지영</author>
+	</book>
+</booklist>

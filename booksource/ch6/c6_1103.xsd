@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<xsd:schema	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+	<!-- 루트 엘리먼트 선언 -->  
+	<xsd:element name="author">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="name" type="xsd:string"/>
+				<xsd:element name="ssn" type="stSsn"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+  <!-- 글로벌 심플 타입 정의 -->
+	<xsd:simpleType name="stSsn">
+		<xsd:restriction base="xsd:string">
+			<xsd:length value="14"/>
+			<xsd:pattern value="\d{6}-\d{7}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

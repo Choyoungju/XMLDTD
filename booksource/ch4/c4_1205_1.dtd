@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 내부 파라미터 엔티티 선언 -->
+<!ENTITY % maninfo "(name, age, tel)">
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT tel (#PCDATA)>

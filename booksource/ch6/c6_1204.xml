@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<booklist  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		       xsi:noNamespaceSchemaLocation="c6_1204.xsd">
+
+	<book id="b1" kind="컴퓨터">
+		<title>XML And Java</title>
+		<author>신민철</author>
+		<publisher>프리렉</publisher>
+		<price>25000</price>
+		<img src="/images/background.gif"/>
+	</book>
+
+	<book id="b2" kind="소설">
+		<title>가을의 전설</title>
+		<author>이가을</author>
+		<publisher>가을출판사</publisher>
+		<price>10000</price>
+	</book>
+
+</booklist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<xsd:schema	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<!-- 루트 엘리먼트 선언 -->  
+	<xsd:element name="booklist">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="book" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="title" type="xsd:string"/>
+							
+							<!-- nillable 속성 사용 -->
+							<xsd:element name="image" type="xsd:anyURI"
+								nillable="true"/>
+							
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+</xsd:schema>

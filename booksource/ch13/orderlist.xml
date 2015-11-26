@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+  OML 네임스페이스: http://www.shop.com/oml
+  PML 네임스페이스: http://www.shop.com/pml
+  CML 네임스페이스: http://www.shop.com/cml
+-->
+
+<orderlist xmlns="http://www.shop.com/oml"
+                xmlns:pml="http://www.shop.com/pml"
+                xmlns:cml="http://www.shop.com/cml">
+  
+  <order>
+    <oid>o1</oid>
+    <cid cml:nmae="최하얀">white</cid>
+    <pid pml:name="CDROM">p1</pid>
+    <qty>10</qty>
+    <date>2006.04.25</date>
+  </order>
+  
+</orderlist>

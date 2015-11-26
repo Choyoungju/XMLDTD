@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<!DOCTYPE booklist SYSTEM "c4_1501.dtd">
+
+<booklist>			 
+
+  <book id="b1" kind="컴퓨터">
+    <title>JSP And Servlet</title>
+    <author>
+      <name sex="man">신민철</name>
+      <tel>011-123-1234</tel>
+      <address>경기도 일산시</address>
+    </author>
+    <publisher>프리렉</publisher>
+    <price>25000</price>
+  </book>
+
+  <book id="b2" kind="컴퓨터">
+    <title>Inside XML</title>
+    <author>
+      <name sex="man">채규태</name>
+      <tel>016-567-5678</tel>
+      <address>서울시 중랑구 면목1동</address>
+    </author>
+    <publisher>디지털북스</publisher>
+    <price>35000</price>
+  </book>
+
+  <book id="b3" kind="언어">
+    <title>쉽게 배우는 영어</title>
+    <author>
+      <name sex="woman">이규미</name>
+      <tel>019-987-9876</tel>
+      <address>서울시 관악구 신림1동</address>
+    </author>
+    <publisher>시사영어사</publisher>
+    <price>20000</price>
+  </book>
+
+  <book id="b4" kind="소설">
+    <title>나도 이젠 결혼하고 싶다.</title>
+    <author>
+      <name sex="woman">이규미</name>
+      <tel>019-987-9876</tel>
+      <address>서울시 관악구 신림1동</address>
+    </author>
+    <publisher>사랑문화사</publisher>
+    <price>15000</price>
+  </book>
+
+</booklist>
+

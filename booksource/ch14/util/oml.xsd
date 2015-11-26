@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.mincheol.com/oml"
+            elementFormDefault="qualified"
+            xmlns="http://www.mincheol.com/oml">
+
+    <!-- 글로벌 엘리먼트 선언 -->
+    <xsd:element name="products" type="ctProducts"/>
+    <xsd:element name="orders" type="ctOrders"/>
+    <xsd:element name="order" type="ctOrder"/>
+    <xsd:element name="request" type="ctRequest"/>
+    <xsd:element name="response" type="ctResponse"/>
+
+    <!-- 글로벌 컴플렉스 타입 선언 -->
+    <xsd:complexType name="ctProducts">
+        <xsd:sequence>
+            <xsd:element name="product" type="ctProduct" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="ctProduct">
+        <xsd:sequence>
+            <xsd:element name="productid" type="xsd:string"/>
+            <xsd:element name="productname" type="xsd:string"/>
+            <xsd:element name="productprice" type="xsd:positiveInteger"/>
+        </xsd:sequence>
+    </xsd:complexType>  
+    
+    <xsd:complexType name="ctOrders">
+        <xsd:sequence>
+            <xsd:element ref="order" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>  
+    
+    <xsd:complexType name="ctOrder">
+        <xsd:sequence>
+            <xsd:element name="userid" type="xsd:string"/>
+            <xsd:element name="username" type="xsd:string"/>
+            <xsd:element name="productid" type="xsd:string"/>
+            <xsd:element name="productname" type="xsd:string"/>
+            <xsd:element name="qty" type="xsd:positiveInteger"/>
+        </xsd:sequence>        
+    </xsd:complexType>           
+    
+    <xsd:complexType name="ctRequest">
+        <xsd:sequence>
+            <xsd:element name="action" type="xsd:string"/>
+            <xsd:element name="data" type="ctData" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="ctData">
+        <xsd:choice>
+            <xsd:element ref="order"/>
+        </xsd:choice>
+    </xsd:complexType>
+     
+    <xsd:complexType name="ctResponse">
+        <xsd:choice>
+            <xsd:element ref="products"/> 
+            <xsd:element ref="orders"/>
+            <xsd:element name="orderresult" type="xsd:string"/>       
+            <xsd:element name="validationerror" type="xsd:string"/>
+        </xsd:choice>        
+    </xsd:complexType> 
+   
+</xsd:schema>
+
+
+
+
+
+
+

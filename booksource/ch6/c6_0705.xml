@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<책목록 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="c6_0705.xsd">
+	
+	<책>시인과도둑</책>
+	<책>모바일 프로그램</책>
+	
+</책목록>
+

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Contents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ContentsXsd.xsd">
+<!-- 11월 17일 : xml과 dtd 를 이용하여 10대, 20대가 가장 많이 소비하는 미디어 컨텐츠 문서 제작-->
+<!-- 11월 18일 : 17일의 내용을 entity를 활용하여 내부, 외부 파라미터 엔티티에 대한 활용-->
+
+    <music kind ="rock">
+        <title>Peace N` Rock N` Roll</title>
+        <artist>체리필터</artist>
+        <music_publisher>로엔 엔터테인먼트</music_publisher>
+        <year>2006</year>
+        <rate>9.6</rate>
+        <lyrics>체리필터</lyrics>
+        <compose>체리필터</compose>
+    </music>
+    
+    <music kind ="rock">
+        <title>MOAI</title>
+        <artist>서태지</artist>
+        <music_publisher>예당씨엔에스</music_publisher>
+        <year>2009</year>
+        <rate>9.7</rate>
+        <lyrics>서태지</lyrics>
+        <compose>서태지</compose>
+    </music>
+    
+    <music kind ="rock">
+        <title>Daughtry</title>
+        <artist>Daughtry</artist>
+        <music_publisher>Sony Music</music_publisher>
+        <year>2008</year>
+        <rate>9.8</rate>
+        <lyrics>Daughtry</lyrics>
+        <compose>Daughtry</compose>
+    </music>
+    
+    <music kind ="rock">
+        <title>The Beginning</title>
+        <artist>one ok rock</artist>
+        <music_publisher>Amuse Korea</music_publisher>
+        <year>2012</year>
+        <rate>9.3</rate>
+        <lyrics>Taka</lyrics>
+        <compose>Taka</compose>
+    </music>
+    
+    <music kind ="hiphop">
+        <title>LUCKYNUMBERS</title>
+        <artist>Dynamic Duo</artist>
+        <music_publisher>로엔 엔터테인먼트</music_publisher>
+        <year>2013</year>
+        <rate>8.6</rate>
+        <lyrics>최자</lyrics>
+        <compose>개코</compose>
+    </music>
+    
+    <music kind ="hiphop">
+        <title>신발장</title>
+        <artist>에픽하이</artist>
+        <music_publisher>kt뮤직</music_publisher>
+        <year>2014</year>
+        <rate>9.3</rate>
+        <lyrics>타블로</lyrics>
+        <compose>타블로</compose>
+    </music>
+    
+    
+    <music kind ="hiphop">
+        <title>Recovery</title>
+        <artist>Eminem</artist>
+        <music_publisher>Universal music</music_publisher>
+        <year>2010</year>
+        <rate>9.4</rate>
+        <lyrics>Eminem</lyrics>
+        <compose>Eminem</compose>
+    </music>
+    
+    <music kind ="hiphop">
+        <title>신발장</title>
+        <artist>에픽하이</artist>
+        <music_publisher>kt뮤직</music_publisher>
+        <year>2014</year>
+        <rate>9.3</rate>
+        <lyrics>타블로</lyrics>
+        <compose>타블로</compose>
+    </music>
+    
+    <music kind ="hiphop">
+        <title>Ames room</title>
+        <artist>Supreme team</artist>
+        <music_publisher>로엔 엔터테인먼트</music_publisher>
+        <year>2010</year>
+        <rate>9.0</rate>
+        <lyrics>김건우</lyrics>
+        <compose>김건우</compose>
+    </music>
+    
+    
+    <music kind ="ballad">
+        <title>Dazzle</title>
+        <artist>이수영</artist>
+        <music_publisher>kt뮤직</music_publisher>
+        <year>2009</year>
+        <rate>9.7</rate>
+        <lyrics>이수영</lyrics>
+        <compose>황성제</compose>
+    </music>
+    
+    <music kind ="ballad">
+        <title>I am...&amp;I am</title>
+        <artist>신승훈</artist>
+        <music_publisher>CJ E&amp;M</music_publisher>
+        <year>2015</year>
+        <rate>9.0</rate>
+        <lyrics>심현보</lyrics>
+        <compose>신승훈</compose>
+    </music>
+    
+    <music kind ="ballad">
+        <title>In My Own Words</title>
+        <artist>Ne yo</artist>
+        <music_publisher>Universal music</music_publisher>
+        <year>2006</year>
+        <rate>9.3</rate>
+        <lyrics>Ne yo</lyrics>
+        <compose>Ne yo</compose>
+    </music>
+    
+    <music kind ="ballad">
+        <title>처음</title>
+        <artist>성시경</artist>
+        <music_publisher>CJ E&amp;M</music_publisher>
+        <year>2011</year>
+        <rate>9.0</rate>
+        <lyrics>강승원</lyrics>
+        <compose>강승원</compose>
+    </music>
+    
+    
+    
+    <movie genre = "comedy" country = "India">
+        <title>3Idiots</title>
+        <director>라지쿠마르 히라니</director>
+        <year>2006</year>
+        <rate>9.34</rate>
+        <!--actor>아미르 칸</actor-->
+        <time>141</time>
+        <age>12</age>
+    </movie>
+    
+    <movie genre = "thriller" country = "USA" actor = "톰행크스">
+        <title>스파이 브릿지</title>
+        <director>스티븐 스필버그</director>
+        <year>2015</year>
+        <rate>8.82</rate> 
+        <time>141</time>
+        <age>12</age>
+    </movie>
+    
+    <movie genre = "action" country = "USA" actor = "크리스찬 베일">
+        <title>Dark knight</title>
+        <director>크리스토퍼 놀란</director>
+        <year>2008</year>
+        <rate>8.70</rate>
+        <time>152</time>
+        <age>15</age>
+    </movie>
+    
+    
+    
+    
+</Contents>

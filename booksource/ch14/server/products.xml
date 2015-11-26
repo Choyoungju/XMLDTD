@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<products>
+    <product>
+        <productid>p1001</productid>
+        <productname>DVD콤보</productname>
+        <productprice>230000</productprice>
+    </product>
+    
+    <product>
+        <productid>p1002</productid>
+        <productname>평면TV</productname>
+        <productprice>550000</productprice>
+    </product>
+    
+    <product>
+        <productid>p1003</productid>
+        <productname>디지털카메라</productname>
+        <productprice>300000</productprice>
+    </product>
+    
+    <product>
+        <productid>p1004</productid>
+        <productname>홈씨어터</productname>
+        <productprice>2500000</productprice>
+    </product>  
+    
+    <product>
+        <productid>p1005</productid>
+        <productname>네비게이션</productname>
+        <productprice>450000</productprice>
+    </product>    
+</products>

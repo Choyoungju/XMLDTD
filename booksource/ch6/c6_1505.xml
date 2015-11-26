@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<booklist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		    xsi:noNamespaceSchemaLocation="c6_1505.xsd">
+
+	<book id="b1">XML 기초서</book>
+	<book id="b2">사랑과 야망</book>
+	<book id="b3">Java Programming</book>
+
+</booklist>

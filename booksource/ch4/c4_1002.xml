@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 문서 유형 선언 -->
+<!DOCTYPE book SYSTEM "c4_1002.dtd">
+
+<!-- 루트 엘리먼트 -->
+<book>
+  <title>XML Fundamentals</title>
+  <author>신민철</author>
+  <price>20000</price>
+  <publisher>프리렉</publisher>
+</book>
+

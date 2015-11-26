@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<!DOCTYPE booklist SYSTEM "c4_1202.dtd">
+<booklist>
+	<book>
+		<title>시인과도둑</title>
+		<author>이문열</author>
+		<nation>&kr;</nation>
+	</book>
+	<book>
+		<title>Java Programming</title>
+		<author nation="&fr;">Jone</author>
+		<nation>&usa;</nation>
+	</book>
+</booklist>

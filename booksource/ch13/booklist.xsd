@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<xsd:schema	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <xsd:element name="booklist">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="book" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="title" type="xsd:string"/>
+              <xsd:element name="author" type="xsd:string"/>
+              <xsd:element name="publisher" type="xsd:string"/>
+              <xsd:element name="price" type="xsd:int"/>
+            </xsd:sequence>
+            <xsd:attribute name="bid" type="xsd:ID"/>
+            <xsd:attribute name="kind" type="xsd:string"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
+</xsd:schema>

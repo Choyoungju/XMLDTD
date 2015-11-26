@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<booklist  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		       xsi:noNamespaceSchemaLocation="c6_1205.xsd">
+
+	<book>
+		<title>XML And Java</title>
+		<price unit="원">25000</price>
+	</book>
+
+</booklist>

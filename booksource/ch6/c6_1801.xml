@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<booklist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		    xsi:noNamespaceSchemaLocation="c6_1801.xsd">
+
+	<book>
+		<title>XML And Java</title>
+		<image src="xmlandjava.gif" type="gif"/>
+	</book>
+
+	<book>
+		<title>사랑과 전쟁</title>
+		<image src="loveandwar.bmp" type="bmp"/>
+	</book>
+
+</booklist>

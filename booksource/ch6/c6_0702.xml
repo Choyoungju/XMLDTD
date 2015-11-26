@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<책목록 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		    xsi:noNamespaceSchemaLocation="c6_0702.xsd">
+
+	<책 종류="소설">
+		<제목>시인과도둑</제목>
+		<저자>이문열</저자>
+		<가격>9000</가격>
+	</책>
+
+	<책 종류="컴퓨터">
+		<제목>모바일 프로그램</제목>
+		<저자>신민철</저자>
+		<가격>5000</가격>
+	</책>
+
+</책목록>

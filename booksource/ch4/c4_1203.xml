@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<!DOCTYPE booklist SYSTEM "c4_1203.dtd">
+<booklist>
+	&kind;
+	<!-- 책 목록 -->
+	<book id="b1" kind="k1">
+		<title>시인과도둑</title>
+		<author>이문열</author>
+	</book>
+	<book id="b2" kind="k2">
+		<title>Java Programming</title>
+		<author>홍길동</author>
+	</book>
+</booklist>

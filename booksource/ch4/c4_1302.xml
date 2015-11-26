@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<!DOCTYPE booklist SYSTEM "c4_1302.dtd">
+<booklist>
+	<!-- 외부 일반 언파스드 엔티티 참조 -->
+	<book image="front_image">
+		<title>시인과도둑</title>
+		<author>이문열</author>
+	</book>
+</booklist>

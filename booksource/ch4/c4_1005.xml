@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 문서 유형 선언 -->
+<!DOCTYPE book SYSTEM "c4_1005.dtd">
+
+<!-- 루트 엘리먼트 -->
+<book>
+	<title>XML 기본서</title>
+	<author>신민철</author>
+	<author>채규태</author>
+	<author>이규미</author>
+	<publisher>프리렉</publisher>
+</book>
+

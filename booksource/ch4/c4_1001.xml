@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 문서 유형 선언 -->
+<!DOCTYPE book SYSTEM "c4_1001.dtd">
+
+<!-- 루트 엘리먼트 -->
+<book>
+	<author>이문열</author>
+  <title>시인과 도둑</title>
+</book>

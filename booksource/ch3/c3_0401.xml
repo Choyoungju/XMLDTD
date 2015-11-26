@@ -1,0 +1,12 @@
+<!-- XML 문서 선언 -->
+<?xml version="1.0" encoding="euc-kr"?>
+
+<booklist>
+  <!--  책 정보 -->
+  <book>
+    <title>XML 기초서</title>
+    <author>신민철</author>
+    <publisher>프리렉</publisher>
+  </book>
+</booklist>
+

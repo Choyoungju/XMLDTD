@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="euc-kr" standalone="no"?>
+
+<!DOCTYPE booklist SYSTEM "c3_0403.dtd">
+
+<booklist>
+	<book>
+		<title>XML 기초서</title>
+		<publisher>&pub1;</publisher>
+	</book>
+</booklist>

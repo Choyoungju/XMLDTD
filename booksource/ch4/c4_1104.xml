@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<!DOCTYPE booklist SYSTEM "c4_1104.dtd">
+<booklist>
+	<book kind="소설" nation="국내">
+		<title>시인과도둑</title>
+		<author>이문열</author>
+	</book>
+
+	<book kind="컴퓨터">
+		<title>Visual Studio .Net</title>
+		<author>Microsoft</author>
+	</book>
+</booklist>

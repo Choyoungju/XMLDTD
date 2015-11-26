@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<booklist 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.mincheol.com/bml c6_1901.xsd"
+  xmlns="http://www.mincheol.com/bml">
+			 
+  <book>
+    <title>JSP And Servlet</title>
+    <author>Mincheol Shin</author>
+    <publisher>InfoBook</publisher>
+    <price>25000</price>
+  </book>
+
+  <book>
+    <title>사랑과 전쟁</title>
+    <author>이사랑</author>
+    <publisher>전쟁문화사</publisher>
+    <price>15000</price>
+  </book>
+  
+</booklist>

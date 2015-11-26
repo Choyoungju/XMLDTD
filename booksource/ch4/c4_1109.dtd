@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 엘리먼트 선언 -->
+<!ELEMENT booklist (kinds, book*)>
+	<!ELEMENT kinds (kind*)>
+		<!ELEMENT kind (#PCDATA)>
+	<!ELEMENT book (title, author)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT author (#PCDATA)>
+
+<!-- 속성 선언 -->
+<!ATTLIST kind
+		id		ID		#REQUIRED>
+<!ATTLIST book
+    id		ID		#REQUIRED
+		kind	IDREF #REQUIRED>

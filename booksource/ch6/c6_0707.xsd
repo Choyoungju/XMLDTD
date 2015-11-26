@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<xsd:schema	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<!-- 섭스티튜션 헤드 -->
+	<xsd:element name="author" type="xsd:string"/>
+	
+	<!-- 섭스티튜션그룹에 속하는 엘리먼트 -->
+	<xsd:element name="writer" type="xsd:string"
+		substitutionGroup="author"/>
+	
+	<!-- 루트 엘리먼트 선언 -->  
+	<xsd:element name="booklist">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="book" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="title" type="xsd:string"/>
+							
+							<!-- 섭스티튜션 헤드 엘리먼트가 사용이 되는 곳 -->
+							<xsd:element ref="author"/>
+							
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+</xsd:schema>

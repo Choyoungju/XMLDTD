@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<booklist>
+  <!--  책 정보 -->
+  <book id="b1"  kind="컴퓨터">
+    <title>닷넷 개발자를 위한 XML Programming</title>
+    <author>신민철</author>
+    <publisher>프리렉</publisher>
+  </book>
+</booklist>
+

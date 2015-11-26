@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<booklist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="c6_0707.xsd">
+    
+    <book>
+        <title>Visual Basic</title>
+        <author>이규미</author>
+    </book>
+    
+    <book>
+        <title>Java Programming</title>
+        <writer>채규태</writer>
+    </book>
+    
+</booklist>
+
+
+

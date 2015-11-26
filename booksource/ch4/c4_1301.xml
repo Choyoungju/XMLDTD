@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<!DOCTYPE booklist SYSTEM "c4_1301.dtd">
+<booklist>
+	<!-- 책 목록 -->
+	<book>
+		<title>시인과도둑</title>
+		<author>이문열</author>
+		<image src="book1.gif" type="gif"/>
+	</book>
+	<book>
+		<title>Java Programming</title>
+		<author>홍길동</author>
+		<image src="book2.bmp" type="bmp"/>
+	</book>
+</booklist>

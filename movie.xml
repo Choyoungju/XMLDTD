@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE booklist SYSTEM "c4_0601.dtd">
+
+<booklist>
+    <book>
+        <title>C# And XML</title>
+        <author>신민철</author>
+        <publisher>프리렉</publisher>
+        <price>20000</price>
+    </book>
+</booklist>
+
+
+<musiclist>
+    <music kind="rock">
+        <title>VB And XML</title>
+        <artist>신민철</artist>
+        <publisher>프리렉</publisher>
+        <year>20000</year>
+    </music>
+    <music kind="hiphop">
+        <title>VB And XML</title>
+        <artist>신민철</director>
+        <publisher>프리렉</publisher>
+        <year>20000</year>
+    </music>
+    <music kind="ballad">
+        <title>VB And XML</title>
+        <artist>신민철</director>
+        <publisher>프리렉</publisher>
+        <year>20000</year>
+        </music>
+</musiclist>

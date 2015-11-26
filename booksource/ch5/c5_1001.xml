@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<booklist xmlns="http://www.minchoeol.co.kr/2003/BookML">
+
+	<!-- 디폴트 네임스페이스 사용 영역 -->
+	<book>
+		<title>시인과도둑</title>
+		<author>이문열</author>
+	</book>
+
+	<!-- 디폴트 네임스페이스 해지 영역 -->
+	<html xmlns="">
+		<body>
+			제목:봉순이언니 
+			<br/>
+			저자:공지영
+		</body>
+	</html>
+
+	<!-- 디폴트 네임스페이스 사용 영역 -->
+	<book>
+		<title>사랑과 전쟁</title>
+		<author>이사랑</author>
+	</book>
+
+</booklist>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<booklist 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="c6_1602.xsd"
+	xsi:schemaLocation="http://www.mincheol.com/pml c6_1601.xsd"
+	xmlns:pml="http://www.mincheol.com/pml">
+
+	<book>
+		<title>XML Schema 기초</title>
+		<author>신민철</author>
+		<pml:publisher>
+			<pml:name>프리렉</pml:name>
+			<pml:tel>02-345-5678</pml:tel>
+			<pml:address>서울시 마포구</pml:address>
+		</pml:publisher>
+	</book>
+
+</booklist>

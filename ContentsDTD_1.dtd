@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 내부 파라미터 엔티티 선언 -->
+<!ENTITY % musicinfo "(music_title, artist, music_publisher, music_year, music_rate, lyrics, compose)">
+
+<!ELEMENT music_title (#PCDATA)>
+<!ELEMENT artist (#PCDATA)>
+<!ELEMENT music_publisher (#PCDATA)>
+<!ELEMENT music_year (#PCDATA)>
+<!ELEMENT music_rate (#PCDATA)>
+<!ELEMENT lyrics (#PCDATA)>
+<!ELEMENT compose (#PCDATA)>
+
+
+<!ENTITY % movieinfo "(movie_title, director, movie_year, movie_rate, time, age)">
+
+<!ELEMENT movie_title (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT movie_year (#PCDATA)>
+<!ELEMENT movie_rate (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+
+
+
+<!--  Attribute declare -->
+<!ATTLIST music
+    kind (ballad|hiphop|rock|classic) #REQUIRED>
+
+<!ATTLIST movie
+    genre (action|comedy|horror|thriller|drama) #REQUIRED
+    country CDATA #REQUIRED
+    actor  CDATA #IMPLIED>
+
+
+
+    
+

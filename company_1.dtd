@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ENTITY % maninfo "(성명, 부서, 직책, 전화번호)">
+
+<!ELEMENT 성명 (#PCDATA)>
+<!ELEMENT 부서 (#PCDATA)>
+<!ELEMENT 직책 (#PCDATA)>
+<!ELEMENT 전화번호 (#PCDATA)>
+
+<!ATTLIST 성명
+ 사번 CDATA #REQUIRED>

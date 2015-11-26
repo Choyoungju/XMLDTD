@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<booklist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="c6_0706.xsd">
+    
+    <book>
+        <title>Visual Basic</title>
+        <image>http://www.mincheol.com/images/image1.gif</image>
+    </book>
+    
+    <book>
+        <title>Visual C++</title>
+        <image xsi:nil="true"/>
+    </book>
+    
+</booklist>
+
+

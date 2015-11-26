@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<booklist>
+  <book bid="b6" kind="컴퓨터">
+    <title>ASP.NET 프로그래밍</title>
+    <publisher>프리렉</publisher>
+    <price>25000</price>
+  </book>
+
+  <book bid="b7" kind="컴퓨터">
+    <title>Visual C# 프로그래밍</title>
+    <publisher>한빛미디어</publisher>
+    <price>30000</price>
+  </book>
+
+  <book bid="b8" kind="컴퓨터">
+    <title>웹서비스</title>
+    <publisher>프리렉</publisher>
+    <price>35000</price>
+  </book>
+</booklist>

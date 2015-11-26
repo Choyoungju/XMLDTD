@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<xsd:schema	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+	<!-- 루트 엘리먼트 선언 -->  
+  <xsd:element name="booklist" type="ctBooklist"/>
+
+	<!-- 글로벌 컴플렉스 타입 정의 -->
+	<xsd:complexType name="ctBooklist">
+		<xsd:sequence>
+			<xsd:element name="book" type="ctBook" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="ctBook">
+		<xsd:sequence>
+			<xsd:element name="title" type="xsd:string"/>
+			<xsd:element name="author" type="ctAuthor"/>
+			<xsd:element name="publisher" type="ctPublisher"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="ctAuthor">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="tel" type="ctPhone"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="ctPublisher">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="phone" type="ctPhone"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="ctPhone">
+		<xsd:group ref="gTel"/>
+	</xsd:complexType>
+
+	<!-- 모델 그룹 정의 -->
+	<xsd:group name="gTel">
+		<xsd:sequence>
+			<xsd:element name="home" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="office" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="mobile" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:group>
+
+</xsd:schema>

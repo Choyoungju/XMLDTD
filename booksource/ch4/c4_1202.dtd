@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 내부 일반 엔티티 선언 -->
+<!ENTITY kr "대한민국">
+<!ENTITY fr "프랑스">
+<!ENTITY usa "미국">
+
+<!-- 엘리먼트 선언 -->
+<!ELEMENT booklist (book*)>
+	<!ELEMENT book (title, author, nation)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT author (#PCDATA)>
+		<!ELEMENT nation (#PCDATA)>
+
+<!ATTLIST author
+		nation CDATA #IMPLIED>

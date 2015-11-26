@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<xsd:schema	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+	<!-- 루트 엘리먼트 선언 -->  
+	<xsd:element name="책목록">
+		<xsd:complexType>
+			<xsd:sequence>
+
+				<!-- 루트 엘리먼트의 자식 엘리먼트 선언 --> 
+				<xsd:element name="책" minOccurs="0" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="제목" type="xsd:string"/>
+							<xsd:element name="저자" type="xsd:string"/>
+							<xsd:element name="가격" type="xsd:int"/>
+						</xsd:sequence>
+
+						<!-- 책 엘리먼트가 가질 속성 선언 -->
+						<xsd:attribute name="종류" type="xsd:string"/>
+
+					</xsd:complexType>
+				</xsd:element>
+
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>

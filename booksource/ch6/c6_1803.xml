@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<booklist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		    xsi:noNamespaceSchemaLocation="c6_1803.xsd"
+				xmlns:iml="http://www.minchoel.com/iml">
+
+	<book>
+		<title>XML And Java</title>
+		<author>
+			<iml:name>신민철</iml:name>
+			<iml:ssn>123456-1234567</iml:ssn>
+			<iml:tel>02-234-6789</iml:tel>
+			<iml:address>서울시 강남구 역삼동 삼성멀티캠퍼스</iml:address>
+		</author>
+		<image src="xmlandjava.gif" type="iml:gif"/>
+	</book>
+
+</booklist>

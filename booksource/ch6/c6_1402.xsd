@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<xsd:schema	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+	<!-- 루트 엘리먼트 선언 -->  
+  <xsd:element name="booklist" type="ctBooklist"/>
+
+	<!-- 글로벌 컴플렉스 타입 정의 -->
+	<xsd:complexType name="ctBooklist">
+		<xsd:sequence>
+			<xsd:element name="book" type="ctBook" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="ctBook">
+		<xsd:sequence>
+			<xsd:element name="title" type="xsd:string"/>
+			<xsd:element name="author" type="ctAuthor"/>
+			<xsd:element name="publisher" type="ctPublisher"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="ctAuthor">
+		<xsd:attributeGroup ref="gInfo"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="ctPublisher">
+		<xsd:sequence>
+			<xsd:element name="address" type="xsd:string"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="gInfo"/>
+	</xsd:complexType>
+
+	<!-- 속성 그룹 정의 -->
+	<xsd:attributeGroup name="gInfo">
+		<xsd:attribute name="name" type="xsd:string"/>
+		<xsd:attribute name="tel" type="xsd:string"/>
+	</xsd:attributeGroup>
+
+</xsd:schema>

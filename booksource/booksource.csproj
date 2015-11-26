@@ -1,0 +1,618 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2ACB01FE-8922-456C-92A6-2492157485AB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>booksource</RootNamespace>
+    <AssemblyName>booksource</AssemblyName>
+    <StartupObject>booksource.ch9.ReadXmlFromURL</StartupObject>
+    <PublishUrl>http://localhost/booksource/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ch10\WriteAttribute.cs" />
+    <Compile Include="ch10\WriteBase64.cs" />
+    <Compile Include="ch10\WriteElement.cs" />
+    <Compile Include="ch10\WriteNamespace.cs" />
+    <Compile Include="ch10\WriteProcessingInstruction.cs" />
+    <Compile Include="ch10\WriteStartElement.cs" />
+    <Compile Include="ch10\WriteXmlToFile.cs" />
+    <Compile Include="ch10\WriteXmlToStream.cs" />
+    <Compile Include="ch11\AddNewContent.cs" />
+    <Compile Include="ch11\CreateDomFromFile.cs" />
+    <Compile Include="ch11\CreateDomFromString.cs" />
+    <Compile Include="ch11\CreateDomFromURL.cs" />
+    <Compile Include="ch11\FindAttribute.cs" />
+    <Compile Include="ch11\FindChilds.cs" />
+    <Compile Include="ch11\FindDocumentElement.cs" />
+    <Compile Include="ch11\FindElementById.cs" />
+    <Compile Include="ch11\FindElementByTagName.cs" />
+    <Compile Include="ch11\FindFirstBookAndLastBook.cs" />
+    <Compile Include="ch11\FindNextPreviousSibling.cs" />
+    <Compile Include="ch11\FindXPathUsingXmlDocument.cs" />
+    <Compile Include="ch11\FindXPathUsingXPathDocument.cs" />
+    <Compile Include="ch11\ModifyData.cs" />
+    <Compile Include="ch11\ModifyElementName.cs" />
+    <Compile Include="ch11\NewDOM.cs" />
+    <Compile Include="ch11\RemoveAttributeAndElement.cs" />
+    <Compile Include="ch12\Transformation.cs" />
+    <Compile Include="ch13\DisplaySchema.cs" />
+    <Compile Include="ch13\GetXmlAndSchema.cs" />
+    <Compile Include="ch13\InferXmlSchema.cs" />
+    <Compile Include="ch13\ReadXmlForGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ch13\ReadXmlForGridView.Designer.cs">
+      <DependentUpon>ReadXmlForGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ch13\ReadXmlSchema.cs" />
+    <Compile Include="ch13\WriteXmlAndSchema.cs" />
+    <Compile Include="ch13\XmlDataDocumentSearch.cs" />
+    <Compile Include="ch13\XmlDataDocumentUpdate.cs" />
+    <Compile Include="ch14\ForXml.cs" />
+    <Compile Include="ch14\OpenXmlForInsertBook.cs" />
+    <Compile Include="ch9\GetAttribute.cs" />
+    <Compile Include="ch9\GetCharacterData.cs" />
+    <Compile Include="ch9\ReadXmlFromFile.cs" />
+    <Compile Include="ch9\ReadXmlFromString.cs" />
+    <Compile Include="ch9\ReadXmlFromURL.cs" />
+    <Compile Include="ch9\ValidatingFromDTD.cs" />
+    <Compile Include="ch9\ValidatingFromXSD.cs" />
+    <Compile Include="ch9\XmlNodeTypeInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ch13\ReadXmlForGridView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReadXmlForGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ch11\booklist.dtd" />
+    <None Include="ch12\booklist.dtd" />
+    <None Include="ch13\booklist.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch13\booklist.xsx">
+      <DependentUpon>booklist.xsd</DependentUpon>
+    </None>
+    <None Include="ch13\table.sql" />
+    <None Include="ch14\forxml.sql" />
+    <None Include="ch14\openxml.sql" />
+    <None Include="ch3\c3_0403.dtd" />
+    <None Include="ch4\c4_1001.dtd" />
+    <None Include="ch4\c4_1002.dtd" />
+    <None Include="ch4\c4_1003.dtd" />
+    <None Include="ch4\c4_1004.dtd" />
+    <None Include="ch4\c4_1005.dtd" />
+    <None Include="ch4\c4_1006.dtd" />
+    <None Include="ch4\c4_1007.dtd" />
+    <None Include="ch4\c4_1008.dtd" />
+    <None Include="ch4\c4_1009.dtd" />
+    <None Include="ch4\c4_1101.dtd" />
+    <None Include="ch4\c4_1102.dtd" />
+    <None Include="ch4\c4_1103.dtd" />
+    <None Include="ch4\c4_1104.dtd" />
+    <None Include="ch4\c4_1105.dtd" />
+    <None Include="ch4\c4_1106.dtd" />
+    <None Include="ch4\c4_1107.dtd" />
+    <None Include="ch4\c4_1108.dtd" />
+    <None Include="ch4\c4_1109.dtd" />
+    <None Include="ch4\c4_1110.dtd" />
+    <None Include="ch4\c4_1202.dtd" />
+    <None Include="ch4\c4_1203.dtd" />
+    <None Include="ch4\c4_1204.dtd" />
+    <None Include="ch4\c4_1205.dtd" />
+    <None Include="ch4\c4_1205_1.dtd" />
+    <None Include="ch4\c4_1301.dtd" />
+    <None Include="ch4\c4_1302.dtd" />
+    <None Include="ch4\c4_1401.dtd" />
+    <None Include="ch4\c4_1501.dtd" />
+    <None Include="ch4\c4_0601.dtd" />
+    <None Include="ch6\c6_0301.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_0301.xsx">
+      <DependentUpon>c6_0301.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_0302.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_0302.xsx">
+      <DependentUpon>c6_0302.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_0401.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_0401.xsx">
+      <DependentUpon>c6_0401.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_0701.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_0701.xsx">
+      <DependentUpon>c6_0701.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_0702.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_0702.xsx">
+      <DependentUpon>c6_0702.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_0703.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_0703.xsx">
+      <DependentUpon>c6_0703.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_0704.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_0704.xsx">
+      <DependentUpon>c6_0704.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_0705.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_0705.xsx">
+      <DependentUpon>c6_0705.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_0706.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_0706.xsx">
+      <DependentUpon>c6_0706.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_0707.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_0707.xsx">
+      <DependentUpon>c6_0707.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_0801.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_0801.xsx">
+      <DependentUpon>c6_0801.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_0802.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_0802.xsx">
+      <DependentUpon>c6_0802.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1101.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1101.xsx">
+      <DependentUpon>c6_1101.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1102.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1102.xsx">
+      <DependentUpon>c6_1102.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1103.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1103.xsx">
+      <DependentUpon>c6_1103.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1104.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1104.xsx">
+      <DependentUpon>c6_1104.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1105.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1105.xsx">
+      <DependentUpon>c6_1105.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1106.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1106.xsx">
+      <DependentUpon>c6_1106.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1201.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1201.xsx">
+      <DependentUpon>c6_1201.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1202.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1202.xsx">
+      <DependentUpon>c6_1202.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1203.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1203.xsx">
+      <DependentUpon>c6_1203.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1204.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1204.xsx">
+      <DependentUpon>c6_1204.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1205.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1205.xsx">
+      <DependentUpon>c6_1205.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1206.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1206.xsx">
+      <DependentUpon>c6_1206.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1207.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1207.xsx">
+      <DependentUpon>c6_1207.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1301.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1301.xsx">
+      <DependentUpon>c6_1301.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1302.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1302.xsx">
+      <DependentUpon>c6_1302.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1303.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1303.xsx">
+      <DependentUpon>c6_1303.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1304.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1304.xsx">
+      <DependentUpon>c6_1304.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1305.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1305.xsx">
+      <DependentUpon>c6_1305.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1401.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1401.xsx">
+      <DependentUpon>c6_1401.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1402.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1402.xsx">
+      <DependentUpon>c6_1402.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1501.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1501.xsx">
+      <DependentUpon>c6_1501.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1502.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1502.xsx">
+      <DependentUpon>c6_1502.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1503.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1503.xsx">
+      <DependentUpon>c6_1503.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1504.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1504.xsx">
+      <DependentUpon>c6_1504.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1505.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1505.xsx">
+      <DependentUpon>c6_1505.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1601.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1601.xsx">
+      <DependentUpon>c6_1601.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1602.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1602.xsx">
+      <DependentUpon>c6_1602.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1701.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1701.xsx">
+      <DependentUpon>c6_1701.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1801.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1801.xsx">
+      <DependentUpon>c6_1801.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1802.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1802.xsx">
+      <DependentUpon>c6_1802.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1803.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1803.xsx">
+      <DependentUpon>c6_1803.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1804.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1804.xsx">
+      <DependentUpon>c6_1804.xsd</DependentUpon>
+    </None>
+    <None Include="ch6\c6_1901.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch6\c6_1901.xsx">
+      <DependentUpon>c6_1901.xsd</DependentUpon>
+    </None>
+    <None Include="ch9\bml.dtd" />
+    <None Include="ch9\bml.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ch9\bml.xsx">
+      <DependentUpon>bml.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ch10\book.gif" />
+    <Content Include="ch11\booklist.xml" />
+    <Content Include="ch12\booklist.xml" />
+    <Content Include="ch12\booklist.xsl" />
+    <Content Include="ch13\booklist.xml" />
+    <Content Include="ch13\orderlist.xml" />
+    <Content Include="ch14\booklist.xml" />
+    <Content Include="ch3\c3_0301.xml" />
+    <Content Include="ch3\c3_0401.xml" />
+    <Content Include="ch3\c3_0402.xml" />
+    <Content Include="ch3\c3_0403.xml" />
+    <Content Include="ch3\c3_0501.xml" />
+    <Content Include="ch3\c3_0502.xml" />
+    <Content Include="ch3\c3_0701.xml" />
+    <Content Include="ch3\c3_0702.xml" />
+    <Content Include="ch3\c3_0703.xml" />
+    <Content Include="ch3\c3_0704.xml" />
+    <Content Include="ch3\c3_0705.xml" />
+    <Content Include="ch3\c3_0901.xml" />
+    <Content Include="ch4\c4_0601.xml" />
+    <Content Include="ch4\c4_1001.xml" />
+    <Content Include="ch4\c4_1002.xml" />
+    <Content Include="ch4\c4_1003.xml" />
+    <Content Include="ch4\c4_1004.xml" />
+    <Content Include="ch4\c4_1005.xml" />
+    <Content Include="ch4\c4_1006.xml" />
+    <Content Include="ch4\c4_1007.xml" />
+    <Content Include="ch4\c4_1008.xml" />
+    <Content Include="ch4\c4_1009.xml" />
+    <Content Include="ch4\c4_1101.xml" />
+    <Content Include="ch4\c4_1102.xml" />
+    <Content Include="ch4\c4_1103.xml" />
+    <Content Include="ch4\c4_1104.xml" />
+    <Content Include="ch4\c4_1105.xml" />
+    <Content Include="ch4\c4_1106.xml" />
+    <Content Include="ch4\c4_1107.xml" />
+    <Content Include="ch4\c4_1108.xml" />
+    <Content Include="ch4\c4_1109.xml" />
+    <Content Include="ch4\c4_1110.xml" />
+    <Content Include="ch4\c4_1201.xml" />
+    <Content Include="ch4\c4_1202.xml" />
+    <Content Include="ch4\c4_1203.xml" />
+    <Content Include="ch4\c4_1203_1.xml" />
+    <Content Include="ch4\c4_1204.xml" />
+    <Content Include="ch4\c4_1205.xml" />
+    <Content Include="ch4\c4_1301.xml" />
+    <Content Include="ch4\c4_1302.xml" />
+    <Content Include="ch4\c4_1401.xml" />
+    <Content Include="ch4\c4_1402.xml" />
+    <Content Include="ch4\c4_1501.xml" />
+    <Content Include="ch5\c5_0601.xml" />
+    <Content Include="ch5\c5_0602.xml" />
+    <Content Include="ch5\c5_0801.xml" />
+    <Content Include="ch5\c5_0802.xml" />
+    <Content Include="ch5\c5_0901.xml" />
+    <Content Include="ch5\c5_0902.xml" />
+    <Content Include="ch5\c5_1001.xml" />
+    <Content Include="ch5\c5_1101.xml" />
+    <Content Include="ch5\c5_1102.xml" />
+    <Content Include="ch5\c5_1103.xml" />
+    <Content Include="ch6\c6_0301.xml" />
+    <Content Include="ch6\c6_0401.xml" />
+    <Content Include="ch6\c6_0701.xml" />
+    <Content Include="ch6\c6_0702.xml" />
+    <Content Include="ch6\c6_0703.xml" />
+    <Content Include="ch6\c6_0704.xml" />
+    <Content Include="ch6\c6_0705.xml" />
+    <Content Include="ch6\c6_0706.xml" />
+    <Content Include="ch6\c6_0707.xml" />
+    <Content Include="ch6\c6_0801.xml" />
+    <Content Include="ch6\c6_0802.xml" />
+    <Content Include="ch6\c6_1101.xml" />
+    <Content Include="ch6\c6_1102.xml" />
+    <Content Include="ch6\c6_1103.xml" />
+    <Content Include="ch6\c6_1104.xml" />
+    <Content Include="ch6\c6_1105.xml" />
+    <Content Include="ch6\c6_1106.xml" />
+    <Content Include="ch6\c6_1201.xml" />
+    <Content Include="ch6\c6_1202.xml" />
+    <Content Include="ch6\c6_1203.xml" />
+    <Content Include="ch6\c6_1204.xml" />
+    <Content Include="ch6\c6_1205.xml" />
+    <Content Include="ch6\c6_1206.xml" />
+    <Content Include="ch6\c6_1207.xml" />
+    <Content Include="ch6\c6_1301.xml" />
+    <Content Include="ch6\c6_1302.xml" />
+    <Content Include="ch6\c6_1303.xml" />
+    <Content Include="ch6\c6_1304.xml" />
+    <Content Include="ch6\c6_1305.xml" />
+    <Content Include="ch6\c6_1401.xml" />
+    <Content Include="ch6\c6_1402.xml" />
+    <Content Include="ch6\c6_1501.xml" />
+    <Content Include="ch6\c6_1502.xml" />
+    <Content Include="ch6\c6_1503.xml" />
+    <Content Include="ch6\c6_1504.xml" />
+    <Content Include="ch6\c6_1505.xml" />
+    <Content Include="ch6\c6_1602.xml" />
+    <Content Include="ch6\c6_1701.xml" />
+    <Content Include="ch6\c6_1801.xml" />
+    <Content Include="ch6\c6_1802.xml" />
+    <Content Include="ch6\c6_1803.xml" />
+    <Content Include="ch6\c6_1901.xml" />
+    <Content Include="ch7\bml.xml" />
+    <Content Include="ch8\c8_0301.xml" />
+    <Content Include="ch8\c8_0301.xsl" />
+    <Content Include="ch8\c8_0601.xml" />
+    <Content Include="ch8\c8_0601.xsl" />
+    <Content Include="ch8\c8_0602.xml" />
+    <Content Include="ch8\c8_0602.xsl" />
+    <Content Include="ch8\c8_0701.xml" />
+    <Content Include="ch8\c8_0701.xsl" />
+    <Content Include="ch8\c8_0702.xml" />
+    <Content Include="ch8\c8_0702.xsl" />
+    <Content Include="ch8\c8_0703.xml" />
+    <Content Include="ch8\c8_0703.xsl" />
+    <Content Include="ch8\c8_0704.xml" />
+    <Content Include="ch8\c8_0704.xsl" />
+    <Content Include="ch8\c8_0801.xml" />
+    <Content Include="ch8\c8_0801.xsl" />
+    <Content Include="ch8\c8_0802.xml" />
+    <Content Include="ch8\c8_0802.xsl" />
+    <Content Include="ch8\c8_0901.xml" />
+    <Content Include="ch8\c8_0901.xsl" />
+    <Content Include="ch8\c8_0902.xml" />
+    <Content Include="ch8\c8_0902.xsl" />
+    <Content Include="ch8\c8_1001.xml" />
+    <Content Include="ch8\c8_1001.xsl" />
+    <Content Include="ch8\c8_1101.xml" />
+    <Content Include="ch8\c8_1101.xsl" />
+    <Content Include="ch8\c8_1102.xml" />
+    <Content Include="ch8\c8_1102.xsl" />
+    <Content Include="ch8\c8_1103.xml" />
+    <Content Include="ch8\c8_1103.xsl" />
+    <Content Include="ch8\c8_1201.xml" />
+    <Content Include="ch8\c8_1201.xsl" />
+    <Content Include="ch8\c8_1202.xml" />
+    <Content Include="ch8\c8_1202.xsl" />
+    <Content Include="ch8\c8_1301.xml" />
+    <Content Include="ch8\c8_1301.xsl" />
+    <Content Include="ch8\c8_1302.xml" />
+    <Content Include="ch8\c8_1302.xsl" />
+    <Content Include="ch8\c8_1303.xsl" />
+    <Content Include="ch8\source.xml" />
+    <Content Include="ch8\source.xsl" />
+    <Content Include="ch9\booklist.xml" />
+    <Content Include="ch9\booklist_dtd.xml" />
+    <Content Include="ch9\booklist_xsd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.1.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

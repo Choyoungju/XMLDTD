@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!DOCTYPE booklist SYSTEM "http://localhost:8080/ch12/bml.dtd">
+
+<booklist>
+
+	<shop>
+		<name>Mincheol 서점</name>
+		<address>ilsan white stone</address>
+		<tel>011-123-2335</tel>
+	</shop>
+	
+	<kinds>
+		<kind id="k1">computer</kind>
+		<kind id="k2">소설</kind>
+		<kind id="k3">잡지</kind>
+	</kinds>
+			 
+  <book id="b1" kind="k1">
+    <title>JSP And Servlet</title>
+    <author>Mincheol Shin</author>
+    <publisher>InfoBook</publisher>
+    <price>25000</price>
+  </book>
+
+  <book id="b2" kind="k2">
+    <title>사랑과 전쟁</title>
+    <author>이사랑</author>
+    <publisher>전쟁문화사</publisher>
+    <price unit="달러">35</price>
+  </book>
+  
+</booklist>

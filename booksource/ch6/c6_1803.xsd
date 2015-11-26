@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<xsd:schema	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+						xmlns:iml="http://www.minchoel.com/iml">
+  
+	<!-- 다른 타겟 네임스페이스를 갖는 스키마 문서 참조 -->
+	<xsd:import namespace="http://www.minchoel.com/iml" 
+							schemaLocation="c6_1804.xsd"/>
+
+	<!-- 루트 엘리먼트 선언 -->
+  <xsd:element name="booklist" type="ctBooklist"/>
+
+	<!-- 글로벌 컴플렉스 타입 정의 -->
+	<xsd:complexType name="ctBooklist">
+		<xsd:sequence>
+			<xsd:element name="book" type="ctBook" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="ctBook">
+	<xsd:sequence>
+		<xsd:element name="title" type="xsd:string"/>
+		<xsd:element name="author" type="iml:ctPerson"/>
+		<xsd:element name="image" type="ctImage"/>
+	</xsd:sequence>	
+	</xsd:complexType>
+
+	<xsd:complexType name="ctImage">
+		<xsd:attribute name="src" type="xsd:anyURI"/>
+		<xsd:attribute name="type" type="iml:stType"/>
+	</xsd:complexType>
+
+</xsd:schema>

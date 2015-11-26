@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 노테이션 선언 -->
+<!NOTATION gif PUBLIC "image/gif" "photoshop.exe">
+<!NOTATION jpeg	PUBLIC "image/jpeg" "photoshop.exe">
+<!NOTATION bmp PUBLIC "image/bmp" "mspaint.exe">
+
+<!-- 엘리먼트 선언 -->
+<!ELEMENT booklist (book*)>
+	<!ELEMENT book (title, author, image)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT author (#PCDATA)>
+		<!ELEMENT image (#PCDATA)>
+
+<!-- 속성 선언 -->
+<!ATTLIST image
+		src CDATA #REQUIRED
+		type NOTATION (gif|jpeg|bmp) #REQUIRED>
+
+

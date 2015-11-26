@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<!-- 책의 종류 -->
+<kinds>
+	<kind id="k1">소설</kind>
+	<kind id="k2">컴퓨터</kind>
+	<kind id="k3">수필</kind>
+</kinds>

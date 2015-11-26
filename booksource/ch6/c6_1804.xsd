@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<xsd:schema	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.minchoel.com/iml"
+	elementFormDefault="qualified"
+	attributeFormDefault="unqualified"
+	xmlns="http://www.minchoel.com/iml">
+
+	<!-- 글로벌 심플 타입 정의 -->
+	<xsd:complexType name="ctPerson">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="ssn" type="xsd:string"/>
+			<xsd:element name="tel" type="xsd:string"/>
+			<xsd:element name="address" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<!-- 글로벌 심플 타입 정의 -->
+	<xsd:simpleType name="stType">
+		<xsd:restriction base="xsd:NOTATION">
+			<xsd:enumeration value="bmp"/>
+			<xsd:enumeration value="gif"/>
+			<xsd:enumeration value="jpeg"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<!-- NOTATION 선언 -->
+	<xsd:notation name="bmp"	public="image/bmp"	system="mspaint.exe"/>
+	<xsd:notation name="gif"	public="image/gif"	system="photoshop.exe"/>
+	<xsd:notation name="jpeg" public="image/jpeg" system="photoshop.exe"/>
+
+</xsd:schema>

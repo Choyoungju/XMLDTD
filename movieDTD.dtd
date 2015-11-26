@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 엘리먼트 선언 -->
+	<!ELEMENT movielist (movie*)>
+	<!ELEMENT movie (title, director, publisher, year, rate)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT director (#PCDATA)>
+		<!ELEMENT publisher (#PCDATA)>
+		<!ELEMENT year (#PCDATA)>
+		<!ELEMENT rate (#PCDATA) >
+		
+		<!ATTLIST movie
+    genre (action|comedy|horror|thriller) #REQUIRED>

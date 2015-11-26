@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<xsd:schema	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+	<!-- 루트 엘리먼트 선언 -->  
+	<xsd:element name="booklist">
+		<!-- 로컬 컴플렉트 타입 정의 -->
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="book" type="ctBook" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<!-- 글로벌 컴플렉스 타입 정의 -->
+	<xsd:complexType name="ctBook">
+		<xsd:sequence>
+			<xsd:element name="title" type="xsd:string"/>
+			<xsd:element name="author" type="xsd:string"/>
+			<xsd:element name="publisher" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>

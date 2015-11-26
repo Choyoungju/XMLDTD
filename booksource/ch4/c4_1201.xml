@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<exams>
+	<exam1>XML &amp; Java</exam1>
+	<exam2>x &lt; y</exam2>
+	<exam3 attr="&lt;xml&gt;"/>
+</exams>

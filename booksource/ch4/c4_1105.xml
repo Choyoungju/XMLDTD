@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<!DOCTYPE booklist SYSTEM "c4_1105.dtd">
+<booklist>
+	<book kind="소설">
+		<title>시인과도둑</title>
+		<author>이문열</author>
+	</book>
+
+	<book kind="컴퓨터" nation="원서">
+		<title>Mobile Programming</title>
+		<author>Jone</author>
+	</book>
+</booklist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- 문서 유형 선언 -->
+<!DOCTYPE booklist SYSTEM "c4_1006.dtd">
+
+<!-- 루트 엘리먼트 -->
+<booklist>
+	<book>
+		<title>XML 기본서</title>
+		<author>신민철</author>
+		<author>채규태</author>
+		<author>이규미</author>
+		<publisher>프리렉</publisher>
+	</book>
+	<book>
+		<title>시인과도둑</title>
+		<author>이문열</author>
+		<publisher>가람기획</publisher>
+	</book>
+</booklist>

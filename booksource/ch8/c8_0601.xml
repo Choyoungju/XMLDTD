@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="euc-kr"?>
+
+<!-- XSL 문서 적용 -->
+<?xml-stylesheet type="text/xsl" href="c8_0601.xsl"?>
+
+<booklist>
+	<book> 
+		시인과도둑
+	</book>
+</booklist>
+
